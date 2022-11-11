@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+body {
+  margin-top: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* height: auto; */
+    width: 100%;
+  border: 1px solid #333;
+  border-radius: 10px;
+  min-height: 10em;
+  overflow: hidden;
+}
+
+label{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.filter{
+  margin-top: 3px;
+padding: 2px;
+  display: flex;
+width: 100%;
+justify-content: space-between;
+align-items: center;
+border-radius: 5px;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #333;
+  border-right: 1px solid #444;
+  border-left: 1px solid #444;
+  margin-bottom: 0.5em;
+}
+
+
+h4{
+  font-weight: 600;
+  margin-right:0.5em;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+li {
+  display: flex;
+  align-items: center;
+  margin: 2px;
+  list-style: none;
+}
+input {
+  margin-bottom: 2px;
+  margin-right: 2px;
+}
+form input {
+  margin: 0;
+  color: #333;
+padding-left: 5px;
+}
+
+form button {
+  width:3.5em;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 10%;
+}
+form button:hover {
+  background: chartreuse;
+}

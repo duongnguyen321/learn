@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://vuighe.net/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Vuighe.net</title>
+</head>
+<body>
+    <!-- Nav - start -->
+    <div class="container nav-container">
+        <div class="nav d-flex a-center justify-content-between">
+            <div class="logo">
+                <img src="img/logo/logo_v8.png" alt="">
+            </div>
+
+            <div class="list-nav d-flex">
+                <div class="list-item">
+                    <span class="list-item-header">Anime</span>
+                </div>
+
+                <div class="list-item">
+                    <span class="list-item-header">Video</span>
+                </div>
+
+                <div class="list-item">
+                    <span class="list-item-header">Tin Tức</span>
+                </div>
+
+                <div class="list-item">
+                    <span class="list-item-header">Truyện</span>
+                </div>
+
+                <div class="list-item">
+                    <span class="list-item-header">BXH</span>
+                </div>
+            </div>
+
+            <div class="search-nav po-relative">
+                <input class="tim-anime" type="text" placeholder="Tìm kiếm anime">
+                <i class="bi bi-search po-abosolute search-icon"></i>
+            </div>
+
+            <div class="log-in d-flex a-center">
+                <div class="sun">
+                    <i class="bi bi-brightness-high"></i>
+                </div>
+                <div class="person">
+                    <i class="bi bi-person-fill"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Nav - end -->
+
+    <!-- Login - start -->
+    <div class="form-login">
+        <div class="hello po-relative">
+            <div class="close-form po-abosolute">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="circle-shadow po-abosolute"></div>
+            <span class="chao-khach">Chào khách!</span>
+            <div class="user-tab d-flex po-abosolute">
+                <div class="dang-nhap">ĐĂNG NHẬP</div>
+                <div class="dang-ky">ĐĂNG KÝ</div>
+            </div>
+        </div>
+
+        <div class="form-dang-nhap">
+            <form action="">
+                <div class="form-group po-relative ten-dang-nhap">
+                    <label for="ten-dang-nhap">Tên đăng nhập
+                        <input type="text" id="ten-dang-nhap" name="ten-dang-nhap">
+                        <i class="bi bi-person-fill po-abosolute"></i>
+                    </label>
+                </div>
+                
+                <div class="form-group po-relative mat-khau">
+                    <label for="mat-khau">Mật khẩu
+                        <input type="password" id="mat-khau" name="mat-khau">
+                        <i class="bi bi-lock-fill po-abosolute"></i>
+                    </label>
+                </div>
+
+                <div class="form-group po-relative">
+                    <label for="remember" class="remember po-abosolute">
+                        <input type="checkbox" checked id="remember" class="checkbox-ghi-nho">
+                    </label>
+                    <span class="ghi-nho">Ghi nhớ</span>
+                    <a><span class="quen-mat-khau po-abosolute">Quên mật khẩu</span></a>
+                </div>
+
+                <div class="form-group button-dang-nhap">
+                    <button type="submit">Đăng nhập</button>
+                </div>
+            </form>
+
+            <hr/>
+
+            <div class="fb po-relative"><i class="bi bi-facebook po-abosolute"></i>Đăng nhập với Facebook</div>
+            <div class="gg po-relative"><i class="bi bi-google po-abosolute"></i>Đăng nhập với Google</div>
+        </div>
+    </div>
+    <!-- Login - end -->
+
+    <!-- Header -->
+    <div class="container header">
+        <div class="row">
+            <div id="main_header" class="col-12 col-lg-9 main-header padding-bot-lg-5">
+                <img class="main-img" src="img/header/main.jpg" alt="">
+                <div class="shadow"></div>
+                <div class="content-header d-flex">
+                    <div class="play-button d-flex j-center a-center">
+                        <div>
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p class="luot-xem">1,324,090 lượt xem</p>
+                        <h1>Kobayashi-san Chi no Maid Dragon</h1>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="col-lg-3 d-none d-block-lg">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <img src="img/header/side-1.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <img src="img/header/side-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 mr-bot-0">
+                        <img src="img/header/side-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 col-lg-3">
+                <img src="img/header/below-1.jpg" alt="">
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <img src="img/header/below-2.jpg" alt="">
+            </div>
+            <div class="col-6 col-lg-3 d-none d-block-lg">
+                <img src="img/header/below-3.jpg" alt="">
+            </div>
+            <div class="col-6 col-lg-3 d-none d-block-lg">
+                <img src="img/header/below-4.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Tập mới nhất - start -->
+    <div class="container new-episodes">
+        <div class="row">
+            <h2>TẬP MỚI NHẤT<i class="bi bi-chevron-right"></i></h2>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="movie">
+                    <img
+                        src="img/tap-moi-nhat/1.jpg"
+                        alt=""
+                        class="movie-thumbnail"
+                    />
+
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Seirei Gensouki</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="movie-chapter"
+                                >Tập 6 - Đêm hội</span
+                            >
+                            <span class="movie-views"
+                                >505 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="movie">
+                    <img
+                        src="img/tap-moi-nhat/2.jpg"
+                        alt=""
+                        class="movie-thumbnail"
+                    />
+
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Seirei Gensouki</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="movie-chapter"
+                                >Tập 6 - Đêm hội</span
+                            >
+                            <span class="movie-views"
+                                >505 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="movie">
+                    <img
+                        src="img/tap-moi-nhat/3.jpg"
+                        alt=""
+                        class="movie-thumbnail"
+                    />
+
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Seirei Gensouki</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="movie-chapter"
+                                >Tập 6 - Đêm hội</span
+                            >
+                            <span class="movie-views"
+                                >505 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="movie">
+                    <img
+                        src="img/tap-moi-nhat/4.jpg"
+                        alt=""
+                        class="movie-thumbnail"
+                    />
+
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Seirei Gensouki</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="movie-chapter"
+                                >Tập 6 - Đêm hội</span
+                            >
+                            <span class="movie-views"
+                                >505 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="movie">
+                    <img
+                        src="img/tap-moi-nhat/5.jpg"
+                        alt=""
+                        class="movie-thumbnail"
+                    />
+
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Seirei Gensouki</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="movie-chapter"
+                                >Tập 6 - Đêm hội</span
+                            >
+                            <span class="movie-views"
+                                >505 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="movie">
+                    <img
+                        src="img/tap-moi-nhat/6.jpg"
+                        alt=""
+                        class="movie-thumbnail"
+                    />
+
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Seirei Gensouki</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="movie-chapter"
+                                >Tập 6 - Đêm hội</span
+                            >
+                            <span class="movie-views"
+                                >505 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="movie">
+                    <img
+                        src="img/tap-moi-nhat/7.jpg"
+                        alt=""
+                        class="movie-thumbnail"
+                    />
+
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Seirei Gensouki</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="movie-chapter"
+                                >Tập 6 - Đêm hội</span
+                            >
+                            <span class="movie-views"
+                                >505 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="movie">
+                    <img
+                        src="img/tap-moi-nhat/8.jpg"
+                        alt=""
+                        class="movie-thumbnail"
+                    />
+
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Seirei Gensouki</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="movie-chapter"
+                                >Tập 6 - Đêm hội</span
+                            >
+                            <span class="movie-views"
+                                >505 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="movie">
+                    <img
+                        src="img/tap-moi-nhat/9.jpg"
+                        alt=""
+                        class="movie-thumbnail"
+                    />
+
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Seirei Gensouki</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="movie-chapter"
+                                >Tập 6 - Đêm hội</span
+                            >
+                            <span class="movie-views"
+                                >505 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="movie">
+                    <img
+                        src="img/tap-moi-nhat/10.jpg"
+                        alt=""
+                        class="movie-thumbnail"
+                    />
+
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Seirei Gensouki</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="movie-chapter"
+                                >Tập 6 - Đêm hội</span
+                            >
+                            <span class="movie-views"
+                                >505 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="movie">
+                    <img
+                        src="img/tap-moi-nhat/11.jpg"
+                        alt=""
+                        class="movie-thumbnail"
+                    />
+
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Seirei Gensouki</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="movie-chapter"
+                                >Tập 6 - Đêm hội</span
+                            >
+                            <span class="movie-views"
+                                >505 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="movie">
+                    <img
+                        src="img/tap-moi-nhat/12.jpg"
+                        alt=""
+                        class="movie-thumbnail"
+                    />
+
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Seirei Gensouki</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="movie-chapter"
+                                >Tập 6 - Đêm hội</span
+                            >
+                            <span class="movie-views"
+                                >505 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tập mới nhất - end -->
+
+    <!-- Tin anime - start -->
+    <div class="container tin-anime">
+        <div class="row">
+            <h2>TIN ANIME<i class="bi bi-chevron-right"></i></h2>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="tin-anime-faction d-flex">
+                    <div class="img-tin-anime">
+                        <img src="img/tin-anime/1.jpg" alt="">
+                    </div>
+                    <div class="content-tin-anime">
+                        <p>Koroshi Ai - Từ "giết nhau" rồi cũng "yêu nhau"!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="tin-anime-faction d-flex">
+                    <div class="img-tin-anime">
+                        <img src="img/tin-anime/2.jpg" alt="">
+                    </div>
+                    <div class="content-tin-anime">
+                        <p>Koroshi Ai - Từ "giết nhau" rồi cũng "yêu nhau"!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="tin-anime-faction d-flex">
+                    <div class="img-tin-anime">
+                        <img src="img/tin-anime/3.jpg" alt="">
+                    </div>
+                    <div class="content-tin-anime">
+                        <p>Koroshi Ai - Từ "giết nhau" rồi cũng "yêu nhau"!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="tin-anime-faction d-flex">
+                    <div class="img-tin-anime">
+                        <img src="img/tin-anime/4.jpg" alt="">
+                    </div>
+                    <div class="content-tin-anime">
+                        <p>Koroshi Ai - Từ "giết nhau" rồi cũng "yêu nhau"!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="tin-anime-faction d-flex">
+                    <div class="img-tin-anime">
+                        <img src="img/tin-anime/5.jpg" alt="">
+                    </div>
+                    <div class="content-tin-anime">
+                        <p>Koroshi Ai - Từ "giết nhau" rồi cũng "yêu nhau"!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="tin-anime-faction d-flex">
+                    <div class="img-tin-anime">
+                        <img src="img/tin-anime/6.jpg" alt="">
+                    </div>
+                    <div class="content-tin-anime">
+                        <p>Koroshi Ai - Từ "giết nhau" rồi cũng "yêu nhau"!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="tin-anime-faction d-flex">
+                    <div class="img-tin-anime">
+                        <img src="img/tin-anime/7.jpg" alt="">
+                    </div>
+                    <div class="content-tin-anime">
+                        <p>Koroshi Ai - Từ "giết nhau" rồi cũng "yêu nhau"!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="tin-anime-faction d-flex">
+                    <div class="img-tin-anime">
+                        <img src="img/tin-anime/8.jpg" alt="">
+                    </div>
+                    <div class="content-tin-anime">
+                        <p>Koroshi Ai - Từ "giết nhau" rồi cũng "yêu nhau"!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="tin-anime-faction d-flex">
+                    <div class="img-tin-anime">
+                        <img src="img/tin-anime/9.jpg" alt="">
+                    </div>
+                    <div class="content-tin-anime">
+                        <p>Koroshi Ai - Từ "giết nhau" rồi cũng "yêu nhau"!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="tin-anime-faction d-flex">
+                    <div class="img-tin-anime">
+                        <img src="img/tin-anime/10.jpg" alt="">
+                    </div>
+                    <div class="content-tin-anime">
+                        <p>Koroshi Ai - Từ "giết nhau" rồi cũng "yêu nhau"!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="tin-anime-faction d-flex">
+                    <div class="img-tin-anime">
+                        <img src="img/tin-anime/11.jpg" alt="">
+                    </div>
+                    <div class="content-tin-anime">
+                        <p>Koroshi Ai - Từ "giết nhau" rồi cũng "yêu nhau"!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="tin-anime-faction d-flex">
+                    <div class="img-tin-anime">
+                        <img src="img/tin-anime/12.jpg" alt="">
+                    </div>
+                    <div class="content-tin-anime">
+                        <p>Koroshi Ai - Từ "giết nhau" rồi cũng "yêu nhau"!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tin anime - end -->
+
+    <!-- Video - start -->
+    <div class="container video">
+        <div class="row">
+            <h2>VIDEO<i class="bi bi-chevron-right"></i></h2>
+        </div>
+
+        <div class="row">
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="video-fraction">
+                    <img src="img/video/1.jpg" alt="">
+                    <div class="play-button play-video d-flex a-center">
+                        <div class="play"><i class="bi bi-play-fill"></i></div>
+                        <div class="time-video">03:21</div>
+                    </div>
+                    <div class="shadow shadow-video"></div>
+                    <div class="content-video">
+                        <p>Demon Slayer: Mugen Train - Clips 01</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="video-fraction">
+                    <img src="img/video/2.jpg" alt="">
+                    <div class="play-button play-video d-flex a-center">
+                        <div class="play"><i class="bi bi-play-fill"></i></div>
+                        <div class="time-video">03:21</div>
+                    </div>
+                    <div class="shadow shadow-video"></div>
+                    <div class="content-video">
+                        <p>Demon Slayer: Mugen Train - Clips 01</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="video-fraction">
+                    <img src="img/video/3.jpg" alt="">
+                    <div class="play-button play-video d-flex a-center">
+                        <div class="play"><i class="bi bi-play-fill"></i></div>
+                        <div class="time-video">03:21</div>
+                    </div>
+                    <div class="shadow shadow-video"></div>
+                    <div class="content-video">
+                        <p>Demon Slayer: Mugen Train - Clips 01</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="video-fraction">
+                    <img src="img/video/4.jpg" alt="">
+                    <div class="play-button play-video d-flex a-center">
+                        <div class="play"><i class="bi bi-play-fill"></i></div>
+                        <div class="time-video">03:21</div>
+                    </div>
+                    <div class="shadow shadow-video"></div>
+                    <div class="content-video">
+                        <p>Demon Slayer: Mugen Train - Clips 01</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="video-fraction">
+                    <img src="img/video/5.jpg" alt="">
+                    <div class="play-button play-video d-flex a-center">
+                        <div class="play"><i class="bi bi-play-fill"></i></div>
+                        <div class="time-video">03:21</div>
+                    </div>
+                    <div class="shadow shadow-video"></div>
+                    <div class="content-video">
+                        <p>Demon Slayer: Mugen Train - Clips 01</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="video-fraction">
+                    <img src="img/video/6.jpg" alt="">
+                    <div class="play-button play-video d-flex a-center">
+                        <div class="play"><i class="bi bi-play-fill"></i></div>
+                        <div class="time-video">03:21</div>
+                    </div>
+                    <div class="shadow shadow-video"></div>
+                    <div class="content-video">
+                        <p>Demon Slayer: Mugen Train - Clips 01</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="video-fraction">
+                    <img src="img/video/7.jpg" alt="">
+                    <div class="play-button play-video d-flex a-center">
+                        <div class="play"><i class="bi bi-play-fill"></i></div>
+                        <div class="time-video">03:21</div>
+                    </div>
+                    <div class="shadow shadow-video"></div>
+                    <div class="content-video">
+                        <p>Demon Slayer: Mugen Train - Clips 01</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="video-fraction">
+                    <img src="img/video/8.jpg" alt="">
+                    <div class="play-button play-video d-flex a-center">
+                        <div class="play"><i class="bi bi-play-fill"></i></div>
+                        <div class="time-video">03:21</div>
+                    </div>
+                    <div class="shadow shadow-video"></div>
+                    <div class="content-video">
+                        <p>Demon Slayer: Mugen Train - Clips 01</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!-- Video - start -->
+
+    <!-- Truyện Tranh - start -->
+    <div class="container truyen-tranh">
+        <div class="row">
+            <h2>TRUYỆN TRANH<i class="bi bi-chevron-right"></i></h2>
+        </div>
+
+        <div class="row">
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="truyen-tranh_fraction po-relative">
+                    <img src="img/truyen-tranh/1.jpg" alt="">
+                    <div class="truyen-tranh_chap po-abosolute">
+                        Chap 165
+                    </div>
+                    <div class="shadow shadow-video"></div>
+                    <div class="truyen-tranh_content po-abosolute">
+                        <p>Dagashi Kashi</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="truyen-tranh_fraction po-relative">
+                    <img src="img/truyen-tranh/2.jpg" alt="">
+                    <div class="truyen-tranh_chap po-abosolute">
+                        Chap 165
+                    </div>
+                    <div class="shadow shadow-video"></div>
+                    <div class="truyen-tranh_content po-abosolute">
+                        <p>Dagashi Kashi</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="truyen-tranh_fraction po-relative">
+                    <img src="img/truyen-tranh/3.jpg" alt="">
+                    <div class="truyen-tranh_chap po-abosolute">
+                        Chap 165
+                    </div>
+                    <div class="shadow shadow-video"></div>
+                    <div class="truyen-tranh_content po-abosolute">
+                        <p>Dagashi Kashi</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="truyen-tranh_fraction po-relative">
+                    <img src="img/truyen-tranh/4.jpg" alt="">
+                    <div class="truyen-tranh_chap po-abosolute">
+                        Chap 165
+                    </div>
+                    <div class="shadow shadow-video"></div>
+                    <div class="truyen-tranh_content po-abosolute">
+                        <p>Dagashi Kashi</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="truyen-tranh_fraction po-relative">
+                    <img src="img/truyen-tranh/5.jpg" alt="">
+                    <div class="truyen-tranh_chap po-abosolute">
+                        Chap 165
+                    </div>
+                    <div class="shadow shadow-video"></div>
+                    <div class="truyen-tranh_content po-abosolute">
+                        <p>Dagashi Kashi</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="truyen-tranh_fraction po-relative">
+                    <img src="img/truyen-tranh/6.jpg" alt="">
+                    <div class="truyen-tranh_chap po-abosolute">
+                        Chap 165
+                    </div>
+                    <div class="shadow shadow-video"></div>
+                    <div class="truyen-tranh_content po-abosolute">
+                        <p>Dagashi Kashi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Truyện Tranh - end -->
+
+    <!-- Tin Tổng Hợp - start -->
+    <div class="container tin-tong-hop">
+        <div class="row">
+            <h2>TIN TỔNG HỢP<i class="bi bi-chevron-right"></i></h2>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="tin-tong-hop-fraction d-flex">
+                    <div class="tin-tong-hop_img">
+                        <img src="img/tin-tong-hop/1.jpg" alt="">
+                    </div>
+
+                    <div class="tin-tong-hop_content">
+                        <div class="label">THỂ THAO</div>
+                        <p>CĐV PSG hai ngày đón Messi hụt</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="tin-tong-hop-fraction d-flex">
+                    <div class="tin-tong-hop_img">
+                        <img src="img/tin-tong-hop/2.jpg" alt="">
+                    </div>
+
+                    <div class="tin-tong-hop_content">
+                        <div class="label">THỂ THAO</div>
+                        <p>CĐV PSG hai ngày đón Messi hụt</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="tin-tong-hop-fraction d-flex">
+                    <div class="tin-tong-hop_img">
+                        <img src="img/tin-tong-hop/3.jpg" alt="">
+                    </div>
+
+                    <div class="tin-tong-hop_content">
+                        <div class="label">THỂ THAO</div>
+                        <p>CĐV PSG hai ngày đón Messi hụt</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="tin-tong-hop-fraction d-flex">
+                    <div class="tin-tong-hop_img">
+                        <img src="img/tin-tong-hop/4.jpg" alt="">
+                    </div>
+
+                    <div class="tin-tong-hop_content">
+                        <div class="label">THỂ THAO</div>
+                        <p>CĐV PSG hai ngày đón Messi hụt</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="tin-tong-hop-fraction d-flex">
+                    <div class="tin-tong-hop_img">
+                        <img src="img/tin-tong-hop/5.jpg" alt="">
+                    </div>
+
+                    <div class="tin-tong-hop_content">
+                        <div class="label">THỂ THAO</div>
+                        <p>CĐV PSG hai ngày đón Messi hụt</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="tin-tong-hop-fraction d-flex">
+                    <div class="tin-tong-hop_img">
+                        <img src="img/tin-tong-hop/6.jpg" alt="">
+                    </div>
+
+                    <div class="tin-tong-hop_content">
+                        <div class="label">THỂ THAO</div>
+                        <p>CĐV PSG hai ngày đón Messi hụt</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="tin-tong-hop-fraction d-flex">
+                    <div class="tin-tong-hop_img">
+                        <img src="img/tin-tong-hop/7.jpg" alt="">
+                    </div>
+
+                    <div class="tin-tong-hop_content">
+                        <div class="label">THỂ THAO</div>
+                        <p>CĐV PSG hai ngày đón Messi hụt</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="tin-tong-hop-fraction d-flex">
+                    <div class="tin-tong-hop_img">
+                        <img src="img/tin-tong-hop/8.jpg" alt="">
+                    </div>
+
+                    <div class="tin-tong-hop_content">
+                        <div class="label">THỂ THAO</div>
+                        <p>CĐV PSG hai ngày đón Messi hụt</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="tin-tong-hop-fraction d-flex">
+                    <div class="tin-tong-hop_img">
+                        <img src="img/tin-tong-hop/9.jpg" alt="">
+                    </div>
+
+                    <div class="tin-tong-hop_content">
+                        <div class="label">THỂ THAO</div>
+                        <p>CĐV PSG hai ngày đón Messi hụt</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="tin-tong-hop-fraction d-flex">
+                    <div class="tin-tong-hop_img">
+                        <img src="img/tin-tong-hop/10.jpg" alt="">
+                    </div>
+
+                    <div class="tin-tong-hop_content">
+                        <div class="label">THỂ THAO</div>
+                        <p>CĐV PSG hai ngày đón Messi hụt</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="tin-tong-hop-fraction d-flex">
+                    <div class="tin-tong-hop_img">
+                        <img src="img/tin-tong-hop/11.jpg" alt="">
+                    </div>
+
+                    <div class="tin-tong-hop_content">
+                        <div class="label">THỂ THAO</div>
+                        <p>CĐV PSG hai ngày đón Messi hụt</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="tin-tong-hop-fraction d-flex">
+                    <div class="tin-tong-hop_img">
+                        <img src="img/tin-tong-hop/12.jpg" alt="">
+                    </div>
+
+                    <div class="tin-tong-hop_content">
+                        <div class="label">THỂ THAO</div>
+                        <p>CĐV PSG hai ngày đón Messi hụt</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tin Tổng Hợp - end -->
+
+    <!-- Phim hoạt hình - start -->
+    <div class="container phim-hoat-hinh">
+        <div class="row">
+            <h2>PHIM HOẠT HÌNH<i class="bi bi-chevron-right"></i></h2>
+        </div>
+
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <div class="phim-hoat-hinh_fraciton po-relative">
+                    <img class="transition-scale" src="img/phim-hoat-hinh/1.jpg" alt="">
+                    <div class="shadow shadow-video"></div>
+                    <div class="truyen-tranh_content po-abosolute color-white">
+                        <p>Vivo</p>
+                        <p>2,221 lượt xem</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="phim-hoat-hinh_fraciton po-relative">
+                    <img class="transition-scale" src="img/phim-hoat-hinh/2.jpg" alt="">
+                    <div class="shadow shadow-video"></div>
+                    <div class="truyen-tranh_content po-abosolute color-white">
+                        <p>Vivo</p>
+                        <p>2,221 lượt xem</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="phim-hoat-hinh_fraciton po-relative">
+                    <img class="transition-scale" src="img/phim-hoat-hinh/3.jpg" alt="">
+                    <div class="shadow shadow-video"></div>
+                    <div class="truyen-tranh_content po-abosolute color-white">
+                        <p>Vivo</p>
+                        <p>2,221 lượt xem</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="phim-hoat-hinh_fraciton po-relative">
+                    <img class="transition-scale" src="img/phim-hoat-hinh/4.jpg" alt="">
+                    <div class="shadow shadow-video"></div>
+                    <div class="truyen-tranh_content po-abosolute color-white">
+                        <p>Vivo</p>
+                        <p>2,221 lượt xem</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="phim-hoat-hinh_fraciton po-relative">
+                    <img class="transition-scale" src="img/phim-hoat-hinh/5.jpg" alt="">
+                    <div class="shadow shadow-video"></div>
+                    <div class="truyen-tranh_content po-abosolute color-white">
+                        <p>Vivo</p>
+                        <p>2,221 lượt xem</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="phim-hoat-hinh_fraciton po-relative">
+                    <img class="transition-scale" src="img/phim-hoat-hinh/6.jpg" alt="">
+                    <div class="shadow shadow-video"></div>
+                    <div class="truyen-tranh_content po-abosolute color-white">
+                        <p>Vivo</p>
+                        <p>2,221 lượt xem</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="phim-hoat-hinh_fraciton po-relative">
+                    <img class="transition-scale" src="img/phim-hoat-hinh/7.jpg" alt="">
+                    <div class="shadow shadow-video"></div>
+                    <div class="truyen-tranh_content po-abosolute color-white">
+                        <p>Vivo</p>
+                        <p>2,221 lượt xem</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="phim-hoat-hinh_fraciton po-relative">
+                    <img class="transition-scale" src="img/phim-hoat-hinh/8.jpg" alt="">
+                    <div class="shadow shadow-video"></div>
+                    <div class="truyen-tranh_content po-abosolute color-white">
+                        <p>Vivo</p>
+                        <p>2,221 lượt xem</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Phim hoạt hình - end -->
+
+    <!-- Bộ sưu tập - start -->
+    <div class="container bo-suu-tap">
+        <div class="row">
+            <h2>BỘ SƯU TẬP<i class="bi bi-chevron-right"></i></h2>
+        </div>
+
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <img src="img/bo-suu-tap/1.jpg" alt="">
+            </div>
+
+            <div class="col-6 col-md-3">
+                <img src="img/bo-suu-tap/2.jpg" alt="">
+            </div>
+
+            <div class="col-6 col-md-3">
+                <img src="img/bo-suu-tap/3.jpg" alt="">
+            </div>
+
+            <div class="col-6 col-md-3">
+                <img src="img/bo-suu-tap/4.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Bộ sưu tập - end -->
+
+    <!-- Hôm nay xem gì - start -->
+    <div class="container">
+        <div class="row">
+            <h2>HÔM NAY XEM GÌ<i class="bi bi-chevron-right"></i></h2>
+        </div>
+
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <div class="movie xem-episodes">
+                    <img class="transition-scale" src="img/hom-nay-xem-gi/1.jpg" alt="">
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                    <p class="so-tap">12/12 tập</p>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Artiswitch</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="views"
+                                >17,476 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="movie xem-episodes">
+                    <img class="transition-scale" src="img/hom-nay-xem-gi/8.jpg" alt="">
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                    <p class="so-tap">12/12 tập</p>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Artiswitch</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="views"
+                                >17,476 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="movie xem-episodes">
+                    <img class="transition-scale" src="img/hom-nay-xem-gi/3.jpg" alt="">
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                    <p class="so-tap">12/12 tập</p>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Artiswitch</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="views"
+                                >17,476 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="movie xem-episodes">
+                    <img class="transition-scale" src="img/hom-nay-xem-gi/4.jpg" alt="">
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                    <p class="so-tap">12/12 tập</p>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Artiswitch</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="views"
+                                >17,476 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="movie xem-episodes">
+                    <img class="transition-scale" src="img/hom-nay-xem-gi/5.jpg" alt="">
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                    <p class="so-tap">12/12 tập</p>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Artiswitch</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="views"
+                                >17,476 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="movie xem-episodes">
+                    <img class="transition-scale" src="img/hom-nay-xem-gi/3.jpg" alt="">
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                    <p class="so-tap">12/12 tập</p>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Artiswitch</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="views"
+                                >17,476 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="movie xem-episodes">
+                    <img class="transition-scale" src="img/hom-nay-xem-gi/4.jpg" alt="">
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                    <p class="so-tap">12/12 tập</p>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Artiswitch</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="views"
+                                >17,476 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="movie xem-episodes">
+                    <img class="transition-scale" src="img/hom-nay-xem-gi/8.jpg" alt="">
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                    <p class="so-tap">12/12 tập</p>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Artiswitch</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="views"
+                                >17,476 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hôm nay xem gì - end -->
+
+    <!-- Bảng Xếp Hạng - start -->
+    <div class="container">
+        <div class="row">
+            <h2>BẢNG XẾP HẠNG<i class="bi bi-chevron-right"></i></h2>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-2">
+                <div class="ranking d-flex po-relative">
+                    <div class="img-ranking">
+                        <img src="img/bang-xep-hang/1.jpg" alt="">
+                    </div>
+                    <div class="content-ranking">
+                        <div class="name-ranking">Naruto Shippuuden</div>
+                        <div class="number-ranking po-abosolute">1</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-2">
+                <div class="ranking d-flex po-relative">
+                    <div class="img-ranking">
+                        <img src="img/bang-xep-hang/2.jpg" alt="">
+                    </div>
+                    <div class="content-ranking">
+                        <div class="name-ranking">Naruto Shippuuden</div>
+                        <div class="number-ranking po-abosolute">2</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-2">
+                <div class="ranking d-flex po-relative">
+                    <div class="img-ranking">
+                        <img src="img/bang-xep-hang/3.jpg" alt="">
+                    </div>
+                    <div class="content-ranking">
+                        <div class="name-ranking">Naruto Shippuuden</div>
+                        <div class="number-ranking po-abosolute">3</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-2">
+                <div class="ranking d-flex po-relative">
+                    <div class="img-ranking">
+                        <img src="img/bang-xep-hang/4.jpg" alt="">
+                    </div>
+                    <div class="content-ranking">
+                        <div class="name-ranking">Naruto Shippuuden</div>
+                        <div class="number-ranking po-abosolute">4</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-2">
+                <div class="ranking d-flex po-relative">
+                    <div class="img-ranking">
+                        <img src="img/bang-xep-hang/5.jpg" alt="">
+                    </div>
+                    <div class="content-ranking">
+                        <div class="name-ranking">Naruto Shippuuden</div>
+                        <div class="number-ranking po-abosolute">5</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-2">
+                <div class="ranking d-flex po-relative">
+                    <div class="img-ranking">
+                        <img src="img/bang-xep-hang/6.jpg" alt="">
+                    </div>
+                    <div class="content-ranking">
+                        <div class="name-ranking">Naruto Shippuuden</div>
+                        <div class="number-ranking po-abosolute">6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bảng Xếp Hạng - end -->
+
+    <!-- Tất cả anime - start -->
+    <div class="container">
+        <div class="row">
+            <h2>TẤT CẢ ANIME<i class="bi bi-chevron-right"></i></h2>
+        </div>
+
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <div class="movie xem-episodes">
+                    <img class="transition-scale" src="img/tat-ca-anime/1.jpg" alt="">
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                    <p class="so-tap">12/12 tập</p>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Kimi wa Kanata</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="views"
+                                >11,225 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="movie xem-episodes">
+                    <img class="transition-scale" src="img/tat-ca-anime/2.jpg" alt="">
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                    <p class="so-tap">12/12 tập</p>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Kimi wa Kanata</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="views"
+                                >11,225 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="movie xem-episodes">
+                    <img class="transition-scale" src="img/tat-ca-anime/3.jpg" alt="">
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                    <p class="so-tap">12/12 tập</p>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Kimi wa Kanata</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="views"
+                                >11,225 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-6 col-md-3">
+                <div class="movie xem-episodes">
+                    <img class="transition-scale" src="img/tat-ca-anime/4.jpg" alt="">
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                    <p class="so-tap">12/12 tập</p>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Kimi wa Kanata</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="views"
+                                >11,225 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="movie xem-episodes">
+                    <img class="transition-scale" src="img/tat-ca-anime/5.jpg" alt="">
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                    <p class="so-tap">12/12 tập</p>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Kimi wa Kanata</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="views"
+                                >11,225 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="movie xem-episodes">
+                    <img class="transition-scale" src="img/tat-ca-anime/6.jpg" alt="">
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                    <p class="so-tap">12/12 tập</p>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Kimi wa Kanata</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="views"
+                                >11,225 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="movie xem-episodes">
+                    <img class="transition-scale" src="img/tat-ca-anime/7.jpg" alt="">
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                    <p class="so-tap">12/12 tập</p>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Kimi wa Kanata</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="views"
+                                >11,225 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="movie xem-episodes">
+                    <img class="transition-scale" src="img/tat-ca-anime/8.jpg" alt="">
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                    <p class="so-tap">12/12 tập</p>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Kimi wa Kanata</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="views"
+                                >11,225 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="movie xem-episodes">
+                    <img class="transition-scale" src="img/tat-ca-anime/9.jpg" alt="">
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                    <p class="so-tap">12/12 tập</p>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Kimi wa Kanata</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="views"
+                                >11,225 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="movie xem-episodes">
+                    <img class="transition-scale" src="img/tat-ca-anime/10.jpg" alt="">
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                    <p class="so-tap">12/12 tập</p>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Kimi wa Kanata</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="views"
+                                >11,225 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="movie xem-episodes">
+                    <img class="transition-scale" src="img/tat-ca-anime/11.jpg" alt="">
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                    <p class="so-tap">12/12 tập</p>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Kimi wa Kanata</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="views"
+                                >11,225 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="movie xem-episodes">
+                    <img class="transition-scale" src="img/tat-ca-anime/12.jpg" alt="">
+                    <button class="movie-play">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                    <p class="so-tap">12/12 tập</p>
+
+                    <div class="movie-desc">
+                        <h3 class="movie-title">Kimi wa Kanata</h3>
+                        <p class="movie-info flex justify-content-between">
+                            <span class="views"
+                                >11,225 lượt xem</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tất cả anime - end -->
+
+    <button class="xem-them">xem thêm</button>
+
+    <div class="container">
+        <p>Xem anime Vietsub online, phim Mỹ, phim Nhật Bản, phim Hàn Quốc, phim Thái Lan, và phim Trung Quốc. Đọc báo thể thao, du lịch, giải trí, tin tức thời sự, thế giới với các chuyên mục bóng đá, hậu trường, review phim, các điểm đến hấp dẫn</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

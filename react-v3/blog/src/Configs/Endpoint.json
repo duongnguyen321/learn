@@ -1,0 +1,7 @@
+{
+    "POSTS": "/posts",
+    "CATEGORIES": "/categories",
+    "USERS": "/users",
+    "OPTIONS": "/options",
+    "COMMENTS": "/comments"
+}

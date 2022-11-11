@@ -1,0 +1,1 @@
+Tạo 3 obj chứa thông tin, rồi console.log ra

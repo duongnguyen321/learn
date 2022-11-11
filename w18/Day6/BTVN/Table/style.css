@@ -1,0 +1,17 @@
+.container {
+    width: 900px;
+    margin: auto;
+    font-size: 25px;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+

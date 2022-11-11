@@ -1,0 +1,90 @@
+.superContainer {
+    font-family: sans-serif;
+    height: 500px;
+    margin: auto;
+    width: 500px;
+}
+
+#burger {
+    color: white;
+    background-color: #4a86e8;
+    border: 1px solid black;
+    height: 35px;
+    width: 35px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.logo-text {
+    display: none;
+}
+
+.header {
+    color: white;
+    background-color: #fbe5cd;
+    padding: 15px;
+}
+
+.header-list div {
+    background-color: #4a86e8;
+    border: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.header-list {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.main {
+    background-color: #e8eced;
+    padding: 0 15px 15px 15px;
+}
+
+.main div {
+    background-color: #4a86e8;
+    height: 200px;
+}
+
+@media (min-width: 1008px) {
+    #burger {
+        display: none;
+    }
+    .logo-text {
+        display: block;
+        flex-direction: column;
+        background-color: #f4cccc;
+        color: black;
+        font-size: 14px;
+        border: 1px solid black;
+        text-align: center;
+        height: 45px;
+        width: 100px;
+    }
+    .logo-text span {
+        display: inline-block;;
+    }
+    .trang-chu {
+        display: none;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        align-items: center;
+        background-color: #d8ead2;
+    }
+    .header-list {
+        display: flex;
+    }
+
+    .header-list .header-item {
+        padding: 10px;
+    }
+}

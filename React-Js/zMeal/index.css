@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+}
+html::-webkit-scrollbar {
+  width: 0;
+}
+body {
+  width: 100%;
+  background: #fefefe;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  background: #efefef;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.heading {
+  margin-left: 1%;
+  cursor: pointer;
+  filter: drop-shadow(0 0 5px rgb(210, 255, 255));
+}
+.heading,
+.title {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-weight: 500;
+  animation: animate 4s linear infinite;
+  padding: 5px;
+  background: #efefef;
+  border-radius: 5px;
+  border-bottom: 2px solid #dcdcdc;
+}
+@keyframes animate {
+  0% {
+    color: #25aae1;
+  }
+  40% {
+    color: #40e495;
+  }
+  80% {
+    color: #30dd8a;
+  }
+  100% {
+    color: #2bb673;
+  }
+}
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1%;
+}
+input {
+  margin-right: 10px;
+  height: 3em;
+  width: 20em;
+  padding: 1em;
+  border: 1px solid #333;
+  background: #efefef;
+  border-radius: 1em;
+  font-size: 16px;
+}
+.random,
+.search {
+  width: 2em;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search {
+  margin-right: 10px;
+}
+.btn-hover {
+  width: 4em;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  height: 3em;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  background-image: linear-gradient(
+    to right,
+    #25aae1,
+    #40e495,
+    #30dd8a,
+    #2bb673
+  );
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+  border-radius: 50px;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.btn-hover:hover {
+  background-position: 100% 0;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.btn-hover:focus {
+  outline: 0;
+}
+.main {
+  position: absolute;
+  top: 75px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+.title {
+  position: fixed;
+  top: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-top: 1px solid #dcdcdc;
+  width: 100%;
+}
+.meal {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+}
+img {
+  position: relative;
+  z-index: -1;
+  top: 56px;
+  width: 500px;
+  height: 500px;
+  border: 1px solid #dcdcdc;
+  border-radius: 20px;
+}
+.instructions {
+  margin-top: 80px;
+width: 1000px;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.Loading {
+  position: relative;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.Loading i {
+  font-size: 200px;
+  animation: loading 3s linear infinite;
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0);
+    color: #25aae1;
+  }
+  100% {
+    transform: rotate(360deg);
+    color: #2bb673;
+  }
+}
+
+.scroll {
+  display: none;
+}
+.hide {
+    display: flex;
+}
+
+#btn {
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border:2px solid #2bb67393;
+  border-radius: 50%;
+  background: #30dd8994;
+}
+#btn i{
+    font-size: 2em;
+    color: #25aae1;
+}

@@ -1,0 +1,13 @@
+.theme-dark{
+  color: #fefefe;
+  background-color: #333;
+  transition: linear 0.2s;
+}
+.theme-light{
+  color: #333;
+  background-color: #fefefe;
+  transition: linear 0.2s;
+}
+body::-webkit-scrollbar{
+  width: 0;
+}

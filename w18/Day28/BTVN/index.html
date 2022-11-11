@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Carousel</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <div class="prev nav-btn"><i class="bi bi-chevron-compact-left"></i></div>
+            <div class="next nav-btn"><i class="bi bi-chevron-compact-right"></i></div>
+        </div>
+
+        <div class="carousel">
+            <div class="item main">
+                <img src="./img/halongpng.png"/>
+                <div class="caption">
+                    <div class="title">Ha Long Bay</div>
+                    <div class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum aperiam nisi ipsum, voluptatum sapiente?</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./img/baisao.jpg"/>
+                <div class="caption">
+                    <div class="title">Bai Sao</div>
+                    <div class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum aperiam nisi ipsum, voluptatum sapiente?</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./img/hococ.jpg"/>
+                <div class="caption">
+                    <div class="title">Ho Coc</div>
+                    <div class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum aperiam nisi ipsum, voluptatum sapiente?</div>
+                </div>
+                      
+            </div>
+            <div class="item">
+                <img src="./img/phuquoc.jpg"/>
+                <div class="caption">
+                    <div class="title">Phu Quoc</div>
+                    <div class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum aperiam nisi ipsum, voluptatum sapiente?</div>
+                </div>
+             </div>      
+        </div>
+
+        <div class="dots">
+            <div class="dot active" onclick="dotControl(0)"></div>
+            <div class="dot" onclick="dotControl(1)"></div>
+            <div class="dot" onclick="dotControl(2)"></div>
+            <div class="dot" onclick="dotControl(3)"></div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

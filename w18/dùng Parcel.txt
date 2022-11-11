@@ -1,0 +1,2 @@
+"start": "parcel src/*.html",
+    "build": "parcel build --dist-dir public src/*.html",

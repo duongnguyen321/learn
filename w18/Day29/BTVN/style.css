@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.pagi {
+    padding-top: 25px;
+    margin: auto;
+    text-align: center;
+}
+
+.pagi button {
+    cursor: pointer;
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.id-post {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.blue {
+    font-size: 30px;
+    color: blue;
+}
+
+.body-post {
+    margin-top: 20px;
+}
+
+.comments-post {
+    margin-top: 20px;
+}

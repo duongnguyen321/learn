@@ -1,0 +1,181 @@
+:root {
+    --primary-color: #626262;
+    --secondary-color: #b4ad9e;
+    --third-color: #f0f0f0;
+}
+
+body {
+    font-family: "Playfair Display";
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: var(--primary-color);
+    line-height: 1;
+}
+
+div img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.containerLarge {
+    width: 1064px;
+    margin: auto;
+}
+
+.containerSmall {
+    width: 899px;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.j-between {
+    justify-content: space-between;
+}
+
+.header {
+    margin-top: 69px;
+    margin-bottom: 60px;
+    align-items: baseline;
+}
+
+.header .logo {
+    font-family: "Inconsolata";
+    font-size: 30px;
+    color: #000000;
+}
+
+.nav {
+    margin-left: auto;
+    align-items: baseline;
+}
+
+.nav-item {
+    margin-left: 100px;
+}
+
+.banner {
+    margin-bottom: 97px;
+}
+
+.category, .comment {
+    font-family: "Ubuntu";
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    margin-bottom: 31px;
+}
+
+.comment {
+    margin-top: 51px;
+    margin-bottom: 134px;
+}
+
+.title h3 {
+    font-size: 30px !important;
+    color: var(--primary-color);
+    margin-bottom: 31px;
+}
+
+.content {
+    line-height: 1.714;
+}
+
+.row {
+    margin-bottom: 135px;
+}
+
+.img-post {
+    margin-bottom: 31px;
+}
+
+.post {
+    flex-basis: 420px;
+}
+
+.margin-bottom-135 {
+    margin-bottom: 135px;
+}
+
+.margin-bottom-130 {
+    margin-bottom: 130px;
+}
+
+.margin-bottom-166 {
+    margin-bottom: 166px;
+}
+
+.sign-up {
+    background-color: var(--third-color);
+    justify-content: center;
+    align-items: center;
+    height: 287px;
+    margin-bottom: 105px;
+}
+
+.signup {
+    width: 401px;
+    text-align: center;
+}
+
+.signup h3 {
+    font-size: 30px;
+    margin-bottom: 81px;
+    color: #333333;
+}
+
+.email-signup {
+    padding-bottom: 9px;
+    border-bottom: 1px solid #333333;
+}
+
+.load-more button{
+    /* display: inline-block; */
+    width: 164px;
+    height: 60px;
+    margin-left: calc(50% - 82px);
+    font-size: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #333333;
+}
+
+.load-more {
+    margin-bottom: 1373px;
+}
+
+.footer {
+    background-color: var(--third-color);
+    max-width: 100%;
+    padding: 39px 69px 43px 151px;
+}
+
+.footer-content {
+    width: 998px;
+}
+
+.policy {
+    margin-left: 83px;
+}
+
+.policy-item {
+    margin-right: 18px;
+}
+.social-icon div {
+    margin-left: 19px;
+}
+
+.social-icon img {
+    object-fit: fill;
+}
+
+
+

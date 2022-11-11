@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Circular Std';
+    src: url('fonts/CircularStd-Medium.woff2') format('woff2'),
+        url('fonts/CircularStd-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('fonts/SofiaPro-Medium.woff2') format('woff2'),
+        url('fonts/SofiaPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('fonts/SofiaPro-Bold.woff2') format('woff2'),
+        url('fonts/SofiaPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Sofia Pro", sans-serif;
+}
+
+.container {
+    width: 1400px;
+    margin: auto;
+    display: flex;
+}
+
+a {
+    font-family: "Circular Std";
+    font-weight: 500;
+    font-style: normal;
+}

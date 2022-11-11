@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    --gutter-x: 10px;
+    --gutter-y: 10px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    margin-left: calc(var(--gutter-x) / -2);
+    margin-right: calc(var(--gutter-x) / -2);
+    margin-top: calc(var(--gutter-y) / -1);
+}
+
+.row > [class*="column"] {
+    padding-left: calc(var(--gutter-x) / 2);
+    padding-right: calc(var(--gutter-x) / 2);
+    margin-top: var(--gutter-y);
+}
+
+.one-column {
+    flex-basis: 8.333333%;
+}
+
+.two-column {
+    flex-basis: 16.666667%;
+}
+
+.three-column {
+    flex-basis: 25%;
+}
+
+.four-column {
+    flex-basis: 33.333333%;
+}
+
+.five-column {
+    flex-basis: 41.666667%;
+}
+
+.six-column {
+    flex-basis: 50%;
+}
+
+.seven-column {
+    flex-basis: 58.333333%;
+}
+
+.eight-column {
+    flex-basis: 66.666667%;
+}
+
+.nine-column {
+    flex-basis: 75%;
+}
+
+.ten-column {
+    flex-basis: 83.333333%;
+}
+
+.eleven-column {
+    flex-basis: 91.666667%;
+}
+
+.twelve-column {
+    flex-basis: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: end;
+}
+
+.post {
+    position: relative;
+}
+
+.post-desc {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0)
+    );
+    padding: 30px 15px 20px;
+    color: #fff;
+}
