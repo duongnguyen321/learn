@@ -12,11 +12,15 @@ export class Sidebars extends Component {
     this.state = {
       video: {},
       categories: {},
-      posts: [],
-      recentPosts: [],
+      postPolular: [],
+      postTrending: [],
+      postLatest: [],
+      tab: 'popular'
     };
   }
-  getOptions = async () => {
+  getOptions = async (type='latest') => {
+
+   
     const res = await client.get(client.options);
     if (res.response.ok) {
       const data = res.data;
@@ -24,40 +28,87 @@ export class Sidebars extends Component {
         video: data.sidebar.video,
         categories: data.sidebar.categories,
       });
-      this.getRecentPosts(data.sidebar.posts.limit);
-      this.getLastedPosts(data.sidebar.posts.limit);
+  
+      this.getPosts(data.sidebar.posts.limit, type);
     }
   };
-  getLastedPosts = async (limit) => {
-    const res = await client.get(client.posts + "?_expand=category", {
-      _limit: limit,
+  // getLastedPosts = async (limit) => {
+  //   const res = await client.get(client.posts + "?_expand=category", {
+  //     _limit: limit,
+  //     _expand: "user",
+  //   });
+  //   if (res.response.ok) {
+  //     const data = res.data;
+  //     this.setState({
+  //       posts: data,
+  //     });
+  //   }
+  // };
+  // getRecentPosts = async (limit) => {
+  //   const res = await client.get(client.posts + "?_expand=category", {
+  //     _expand: "user",
+  //     _limit: limit,
+  //   });
+  //   if (res.response.ok) {
+  //     const data = res.data;
+  //     this.setState({
+  //       recentPosts: data,
+  //     });
+  //   }
+  // };
+
+  getPosts = async (limit, type = 'latest') => {
+    const filter = {
       _expand: "user",
-    });
-    if (res.response.ok) {
-      const data = res.data;
-      this.setState({
-        posts: data,
-      });
+      _limit: limit,
+    };
+
+    if (type !== 'latest') {
+      filter.type = type;
     }
-  };
-  getRecentPosts = async (limit) => {
-    const res = await client.get(client.posts + "?_expand=category", {
-      _expand: "user",
-      _limit: limit,
-    });
+
+
+    const res = await client.get(client.posts + "?_expand=category", filter);
     if (res.response.ok) {
       const data = res.data;
-      this.setState({
-        recentPosts: data,
-      });
+      if (type == 'latest') {
+        this.setState({
+          postLatest: data,
+        });
+      } else if (type == "popular") {
+        this.setState({
+          postPopular: data,
+        });
+      } else {
+        this.setState({
+          postTrending: data,
+        });
+      }
     }
   };
 
   componentDidMount = () => {
-    this.getOptions();
+    this.getOptions(this.state.tab);
   };
+
+  componentDidUpdate = (prevProps, prevState) => {
+    const {tab: prevTab} = prevState;
+    const {tab} = this.state;
+    if (prevTab !== tab) {
+      this.getOptions(this.state.tab);
+    }
+  }
+
+  handleChangeTab = (e) => {
+    const tab = e.target.dataset.current;
+    if (tab!==null){
+      this.setState({tab: tab});
+    }
+  }
+
   render() {
-    const { video, categories, posts, recentPosts } = this.state;
+    const { video, categories, postLatest, postPopular, postTrending } =
+      this.state;
     return (
       <div className="col-md-3">
         {/* ======= Sidebar ======= */}
@@ -77,6 +128,8 @@ export class Sidebars extends Component {
                 role="tab"
                 aria-controls="pills-popular"
                 aria-selected="true"
+                data-current="popular"
+                onClick={this.handleChangeTab}
               >
                 Popular
               </button>
@@ -91,6 +144,8 @@ export class Sidebars extends Component {
                 role="tab"
                 aria-controls="pills-trending"
                 aria-selected="false"
+                data-current="trending"
+                onClick={this.handleChangeTab}
               >
                 Trending
               </button>
@@ -105,6 +160,8 @@ export class Sidebars extends Component {
                 role="tab"
                 aria-controls="pills-latest"
                 aria-selected="false"
+                data-current="latest"
+                onClick={this.handleChangeTab}
               >
                 Latest
               </button>
@@ -112,13 +169,13 @@ export class Sidebars extends Component {
           </ul>
           <div className="tab-content" id="pills-tabContent">
             {/* Popular */}
-            <Popular data={recentPosts} />
+            <Popular data={postPopular} />
             {/* End Popular */}
             {/* Trending */}
-            <Trending data={recentPosts} />
+            <Trending data={postTrending} />
             {/* End Trending */}
             {/* Latest */}
-            <LastedPosts data={posts} />
+            <LastedPosts data={postLatest} />
             {/* End Latest */}
           </div>
         </div>
