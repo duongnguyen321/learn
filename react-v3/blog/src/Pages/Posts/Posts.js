@@ -37,6 +37,8 @@ class Posts extends Component {
   };
 
   componentDidMount = () => {
+    window.scrollTo(0, 0);
+
     const { id } = this.props.params;
 
     this.getCategory(id);
@@ -65,13 +67,9 @@ class Posts extends Component {
                 <>
                   <h1 className="category-title">{category?.name}</h1>
                   {postsList.length ? (
-                    postsList.map(
-                      (post) => {
-                        return (
-                          <PostItem key={post.id} {...post}/>
-                        );
-                      }
-                    )
+                    postsList.map((post) => {
+                      return <PostItem key={post.id} {...post} />;
+                    })
                   ) : (
                     <Alert type="danger" message="No Data" />
                   )}

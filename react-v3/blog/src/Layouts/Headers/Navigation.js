@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 export class Navigation extends Component {
   constructor(props) {
@@ -14,17 +15,17 @@ export class Navigation extends Component {
             if (children) {
               menuItem = (
                 <li key={index} className="dropdown">
-                  <a href={link}>
+                  <NavLink to={link}>
                     <span>{title}</span>
                     <i className="bi bi-chevron-down dropdown-indicator"></i>
-                  </a>
+                  </NavLink>
                   {this.getMenus(children)}
                 </li>
               );
             } else {
               menuItem = (
                 <li key={index}>
-                  <a href={link}>{title}</a>
+                  <NavLink to={link}>{title}</NavLink>
                 </li>
               );
             }

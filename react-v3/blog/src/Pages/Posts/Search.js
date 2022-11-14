@@ -15,6 +15,8 @@ export class Search extends Component {
   }
 
   componentDidMount = () => {
+    window.scrollTo(0, 0);
+
     const [search] = this.props.search;
     const { getPosts, setKeyword } = this.props.store.action;
     if (search.get("keyword")) {
@@ -24,13 +26,12 @@ export class Search extends Component {
 
       setKeyword(keyword);
     }
-
   };
 
   componentDidUpdate = (prevProps, prevState) => {
-    if (prevProps.store.data.keyword!==this.props.store.data.keyword){
-        const { getPosts, setKeyword } = this.props.store.action;
-        getPosts({ q: this.props.store.data.keyword }, PER_PAGE);
+    if (prevProps.store.data.keyword !== this.props.store.data.keyword) {
+      const { getPosts, setKeyword } = this.props.store.action;
+      getPosts({ q: this.props.store.data.keyword }, PER_PAGE);
     }
   };
 

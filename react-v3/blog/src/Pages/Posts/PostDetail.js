@@ -28,8 +28,10 @@ export class PostDetail extends Component {
   }
 
   componentDidMount = () => {
+    window.scrollTo(0, 0);
     const { id } = this.props.params;
     this.getPost(id);
+
   }
 
   render() {
