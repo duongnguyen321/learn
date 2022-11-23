@@ -1,5 +1,5 @@
-import ToDo from "./Components/ToDo/ToDo";
-
+import React from "react";
+import ToDo from "./Components/Todo";
 function App() {
   return (
     <>
